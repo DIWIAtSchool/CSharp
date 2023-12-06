@@ -9,16 +9,17 @@ Ein Beispiel:
 
 (Wichtig: Duck **IST** Animal)
 
-![[Vererbung-CSharp-1.png]]
+![Vererbung](./images/Vererbung-CSharp-1.png)
+
 
 Construktor (ctor) der Basisklasse aufrufen
-![[Vererbung-CSharp-2_Konstrukor.png]]
+![Konstruktor](./images/Vererbung-CSharp-2_Konstrukor.png)
 Der Aufruf des Konstruktors der Basisklasse wird immer **VOR** dem Aufruf des Konstruktors der Subklasse gemacht.
 So werden zuerst die Eigenschaften der Basisklasse, dann die Eigenschaften der abgeleiteten Klasse initialisiert.
 Wenn der Konstruktor der Basisklasse nicht angegeben wird, so wird der Default-Konstruktor (base()) verwendet (in dem Fall Animal() ohne Parameter).
 
 Ein Konstruktor kann auch einen weiteren Konstruktor derselben Klasse aufrufen.
-![[Vererbung-CSharp-2_Konstrukorweiterleitung.png]]
+![Konstrukorweiterleitung](./images/Vererbung-CSharp-2_Konstrukorweiterleitung.png)
 
 Mit dem Operator **is** kann man prüfen, ob ein Objekt von einem bestimmten Typ ist.
 Beispiel:
@@ -35,7 +36,7 @@ Polymorphismus heißt Vielgestaltigkeit (d.h. ein Objekt vom Typ der Basisklasse
 Bsp: Eine Asiatische Katze (AsianCat), die als Cat oder Animal betrachtet werden kann.
 Verwendet man die Referenz auf die Basisklasse (Animal), so würde der Aufruf von "Move()" immer "Animal Move" liefern (obwohl auch die Klasse Cat eine Methode mit der gleichen Signatur anbietet).
 
-![[Polymorphismus-CSharp-1.png]]
+![Polymorphismus](./images/Polymorphismus-CSharp-1.png)
 Deswegen muss man spezielle Vorkehrungen treffen, damit die Methode der Subklasse (Cat) zum Zuge kommt.
 Mittels des Schlüsselwortes "**override**" wird angezeigt, dass die Methode der Subklasse die Methode der Basisklasse "überschreibt".
 
@@ -57,7 +58,7 @@ tom.Move(); // ==> Cat Move
 ```
 
 Will man diese Überschreibung nicht, dann benutzt man das Schlüsselwort "**new**"
-![[Polymorphismus-CSharp-2(override).png]]
+![Override](./images/Polymorphismus-CSharp-2(override).png)
  Bsp:
  ```csharp
 // Sie erstellen eine Ente, weisen das Ergebnis aber einem Objekt vom Type Animal zu
